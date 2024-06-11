@@ -1,3 +1,5 @@
+"use client"
+
 import React from "react";
 import {
   Sheet,
@@ -27,10 +29,10 @@ const MobileNav = ({ user }: MobileNavProps) => {
             className="cursor-pointer"
           />
         </SheetTrigger>
-        <SheetContent>
+        <SheetContent side={'left'} className="border-none bg-white">
           <Link
             href="/"
-            className="mb-12 cursor-pointer flex items-center gap-2"
+            className=" cursor-pointer flex items-center gap-1 px-4"
           >
             <Image
               src="/icons/logo.svg"
@@ -40,7 +42,7 @@ const MobileNav = ({ user }: MobileNavProps) => {
               className="siz-[24px]
                     max-xl:size-14"
             />
-            <h1 className="sidebar-logo">Horizon</h1>
+            <h1 className="text-26 font-ibm-plex-serif font-bold text-black-1 sidebar-logo">Horizon</h1>
           </Link>
           {sidebarLinks.map((item) => {
             const isActive =
