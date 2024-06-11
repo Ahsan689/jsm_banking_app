@@ -23,6 +23,8 @@ const Home = () => {
                 />
             
             </header>
+
+            RECENT TRANSACTIONS
         </div>
 
     </section>
